@@ -4,25 +4,29 @@
 # Link: https://docs.kedro.org/en/stable/catalog-data/introduction/#data-catalog
 
 train_transaction:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/train_transaction.csv
+  type: pandas.CSVDataset
+  filepath: s3://vrahulds-personal-projects/raw/train_transaction.csv
   load_args:
     low_memory: False
+  credentials: aws_credentials
 
 test_transaction:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/test_transaction.csv
+  type: pandas.CSVDataset
+  filepath: s3://vrahulds-personal-projects/raw/test_transaction.csv
   load_args:
     low_memory: False
+  credentials: aws_credentials
 
 train_identity:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/train_identity.csv
+  type: pandas.CSVDataset
+  filepath: s3://vrahulds-personal-projects/raw/train_identity.csv
   load_args:
     low_memory: False
+  credentials: aws_credentials
 
 test_identity:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/test_identity.csv
+  type: pandas.CSVDataset
+  filepath: s3://vrahulds-personal-projects/raw/test_identity.csv
   load_args:
     low_memory: False
+  credentials: aws_credentials
