@@ -30,3 +30,36 @@ test_identity:
   load_args:
     low_memory: False
   credentials: aws_credentials
+
+
+merged_data:
+  type: pandas.ParquetDataset
+  filepath: s3://vrahulds-personal-projects/intermediate/merged_data.parquet
+  credentials: aws_credentials
+
+featured_data:
+  type: pandas.ParquetDataset
+  filepath: s3://vrahulds-personal-projects/intermediate/featured_data.parquet
+  credentials: aws_credentials
+
+clean_data:
+  type: pandas.ParquetDataset
+  filepath: s3://vrahulds-personal-projects/intermediate/clean_data.parquet
+  credentials: aws_credentials
+
+encoded_data:
+  type: pandas.ParquetDataset
+  filepath: s3://vrahulds-personal-projects/intermediate/encoded_data.parquet
+  credentials: aws_credentials
+
+X_train:
+  type: pandas.ParquetDataset
+  filepath: s3://vrahulds-personal-projects/intermediate/X_train.parquet
+  credentials: aws_credentials
+
+y_train:
+  type: pandas.CSVDataset
+  filepath: s3://vrahulds-personal-projects/intermediate/y_train.csv
+  credentials: aws_credentials
+
+

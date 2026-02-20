@@ -1,0 +1,23 @@
+data_processing:
+  
+
+  drop_columns:
+    - TransactionID
+    - TransactionDT
+    - P_emaildomain
+    - R_emaildomain
+    - card_id
+
+  target_column: isFraud
+
+  encoding_exclude:
+    - TransactionID
+    - card_id
+
+  missing_threshold: 0.9
+
+  card_group_column: card1
+
+  night_hours_start: 22
+
+  night_hours_end: 6
