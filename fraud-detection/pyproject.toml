@@ -105,3 +105,6 @@ dev = [
     "pytest-cov>=6.3.0",
     "ruff>=0.12.12",
 ]
+
+[tool.kedro_telemetry]
+project_id = "2573523496cd4c418ff30bc67c94680d"
