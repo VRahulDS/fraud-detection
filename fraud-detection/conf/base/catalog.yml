@@ -2,3 +2,27 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/catalog-data/introduction/#data-catalog
+
+train_transaction:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train_transaction.csv
+  load_args:
+    low_memory: False
+
+test_transaction:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/test_transaction.csv
+  load_args:
+    low_memory: False
+
+train_identity:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train_identity.csv
+  load_args:
+    low_memory: False
+
+test_identity:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/test_identity.csv
+  load_args:
+    low_memory: False

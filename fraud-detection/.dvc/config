@@ -1,5 +1,0 @@
-[core]
-    no_scm = True
-    remote = myremote
-['remote "myremote"']
-    url = s3://vrahulds-personal-projects/dvc-store

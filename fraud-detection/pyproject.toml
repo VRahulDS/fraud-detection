@@ -18,11 +18,9 @@ dependencies = [
     "kedro~=1.2.0",
     "kedro-datasets>=9.2.0",
     "mlflow>=3.9.0",
-    "dvc>=3.66.1",
     "xgboost>=3.2.0",
     "lightgbm>=4.6.0",
     "scikit-learn>=1.7.2",
-    "dvc-s3>=3.3.0",
     "pandas>=2.3.3",
     "numpy>=2.2.6",
     "fastapi>=0.129.0",
@@ -32,6 +30,7 @@ dependencies = [
     "imbalanced-learn>=0.14.1",
     "pydantic>=2.12.5",
     "python-dotenv>=1.2.1",
+    "kedro-dataset[s3]",
 ]
 
 [project.scripts]
